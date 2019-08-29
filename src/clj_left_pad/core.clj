@@ -1,6 +1,6 @@
 (ns clj-left-pad.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn left-pad
+  "String left pad"
+  [s n]
+  (if (>= (count s) n) s (format (str "%" n "s") s)))

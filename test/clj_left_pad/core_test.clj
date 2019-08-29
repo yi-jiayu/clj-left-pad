@@ -2,6 +2,8 @@
   (:require [clojure.test :refer :all]
             [clj-left-pad.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest left-pad-test
+  (testing "when string is longer than target length"
+    (is (= "hello" (left-pad "hello" 3))))
+  (testing "pads with spaces"
+    (is (= "  hello" (left-pad "hello" 7)))))
