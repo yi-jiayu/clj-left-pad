@@ -8,4 +8,6 @@
   (testing "pads with spaces"
     (is (= "  hello" (left-pad "hello" 7))))
   (testing "pads with custom character"
-    (is (= "00hello" (left-pad "hello" 7 \0)))))
+    (is (= "00hello" (left-pad "hello" 7 \0))))
+  (testing "when string is longer than target length when padding with custom character"
+    (is (= "hello" (left-pad "hello" 3 \0)))))

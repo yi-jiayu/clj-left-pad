@@ -1,4 +1,4 @@
-(defproject clj-left-pad "0.3.0"
+(defproject clj-left-pad "0.3.1"
   :description "String left pad"
   :url "https://github.com/yi-jiayu/clj-left-pad"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
